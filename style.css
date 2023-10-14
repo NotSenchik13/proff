@@ -129,16 +129,16 @@ body {
     outline: 2px solid #babfc4;
     border: 1px solid #000;
     background-color: #fff;
-    padding-top: 8px;
-    padding-left: 15px;
+    padding: 20px 20px;
+    /* padding-top: 8px;
+    padding-left: 15px; */
     box-shadow: inset 0 0 10px rgba(0,0,0,.22);
-    padding-left: 2%;
+    /* padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 8px; */
+}
+.header__login_list {
+    margin: 0 auto;
 }
 .header__login_list-item {
     font-size: 15px;
@@ -146,7 +146,7 @@ body {
     font-weight: bold;
     line-height: 17px;
 }
-.header__login_list-item:hover {
+.header__login_list-item:hover{
     text-decoration: underline;
 }
 .header__login_list-item:not(:last-child){
@@ -187,6 +187,18 @@ body {
 
 
 
+@media (max-width: 1024px) {
+    .header__login {
+        padding: 50px 20px;
+    }
+    .header__logo, .header__login {
+        flex: 0 1 24%;
+    }
+    .header__news {
+        flex: 0 1 52%;
+    }
+}
+
 
 @media (max-width: 767px) {
     .header__logo, .header__news, .header__login {
@@ -213,14 +225,9 @@ body {
     .header__burger-slice {
         display: block;
     }
-
+    .header__login, .header__news {
+        padding: 15px 15px;
+    }
 }
-
-
-/*!-----------------------------------------------------------------------------------------------*/
-
-
-
-
 
 
