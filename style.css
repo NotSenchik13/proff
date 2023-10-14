@@ -65,7 +65,7 @@ body {
     outline: 2px solid #babfc4;
     border: 1px solid #000;
     margin-right: 2px;
-    background-color: #fff;
+    background-color: red;
     box-shadow: inset 0 0 10px rgba(0,0,0,.22);
     display: flex;
     align-items: center;
