@@ -1,20 +1,19 @@
 
+let burger = document.querySelector('.header__burger');
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+let news = document.querySelector('.header__news');
+
+let login = document.querySelector('.header__login');
+
+
+
+burger.addEventListener('click', function() {
+    if(news.style.display == 'block') {
+        news.style.display = 'none';
+        login.style.display = 'none';
+    } else {
+        news.style.display = 'block';
+        login.style.display = 'block';
     }
-    return color;
-}
-
-function changeBackgroundColor() {
-    var color = getRandomColor();
-    document.body.style.backgroundColor = color;
-    subtitle.innerHTML = `${color}`;
-}
-
-
-setInterval(changeBackgroundColor, 100);
+})
 
